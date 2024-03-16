@@ -2,29 +2,13 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="lg:w-[250px] w-[50px] min-h-screen bg-blue p-2 transition-[width] duration-200 border-r-[1px] border-[#9993]">
-      <div>
-        <div className="d-flex flex-col">
-          <div className="p-2 flex gap-5 items-center border-b-[1px] border-[#9993] h-[53px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-brand-gmail"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
-              <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
-              <path d="M16 4l-4 4l-4 -4" />
-              <path d="M4 6.5l8 7.5l8 -7.5" />
-            </svg>
-            <h2 className="text-2xl font-[200] hidden lg:block text-white">Logo Name</h2>
+    <div className="lg:w-[250px] w-[50px] bg-blue relative overflow-x-hidden overflow-y-hidden p-2 transition-[width] duration-200 border-r-[1px] border-[#9993]">
+      <div className="h-full">
+        <div className="absolute h-full w-full top-3">
+          <div className="p-2 flex flex-col items-center">
+            <div className="w-20 h-20 bg-slate-300 rounded-full"></div>
+            <h2 className="text-2xl font-[600] hidden lg:block text-white mt-3">Bakeli</h2>
+            <p className="text-white mt-2 font-medium">bakeli@gmail.com</p>
           </div>
           {/* <div className="w-full h-[1px] bg-[#9993] my-1"></div> */}
           <div className="mt-4 flex-col gap-5">

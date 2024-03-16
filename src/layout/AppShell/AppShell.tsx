@@ -11,21 +11,23 @@ import Sidebar from "../Sidebar";
  */
 function AppShell() {
   return (
-    <div className="w-full min-h-screen dark:bg-[#0c0e14] dark:text-white bg-[#9991] flex">
+    <div className="w-full h-screen bg-[#9991] flex flex-row">
       {/* SideBar */}
       <Sidebar />
 
       {/* Container */}
       <div className="flex-1 p-0">
-        {/* Header */}
-        <div className="border-b-[1px] border-[#9993] h-[53px] sticky top-0 bg-white flex items-center justify-between">
-          <div className="">DashBoard</div>
-          <div className="">Other Items</div>
-        </div>
+        <div className="flex flex-col h-full">
+          {/* Header */}
+          <div className="border-b-[1px] border-[#9993] h-[53px] bg-white flex items-center justify-between p-3">
+            <div className="">DashBoard</div>
+            <div className="">Other Items</div>
+          </div>
 
-        {/* My child Items */}
-        <div className="bg-contentBg min-h-[150vh]">
-          <Outlet />
+          {/* My child Items */}
+          <div className="bg-contentBg h-full overflow-y-auto overflow-x-hidden p-3">
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>
