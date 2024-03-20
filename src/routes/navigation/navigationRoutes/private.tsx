@@ -1,7 +1,7 @@
-import ErrorBoundary from "../../../components/ErrorBoundary/ErrorBoundary";
-import AppShell from "../../../layout/AppShell/AppShell";
-import RequireAuth from "../../../layout/RequireAuth";
+import ErrorBoundary from "@/components/ErrorBoundary/ErrorBoundary";
 import { ACCEUIL_PATH } from "../navigationPaths";
+import RequireAuth from "@/layout/RequireAuth";
+import AppShell from "@/layout/AppShell/AppShell";
 
 
 /*

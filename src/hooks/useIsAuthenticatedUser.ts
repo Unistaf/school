@@ -1,9 +1,8 @@
 // !GERER L'AUTORISATION D'ACCESS A VOTRE APPLICATION
 /**
  * Definit l'authentification
- * @return {true|false}
  */
-function useIsAuthenticate() {
+function useIsAuthenticate(): true | false {
   const isAuthenticate = true;
 
   return isAuthenticate;
