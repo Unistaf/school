@@ -1,5 +1,12 @@
-// import { ACCEUIL_PATH, PRODUCTS_PATH } from "./navigationPaths";
-// import { HiHome } from "react-icons/hi";
+import { MdDashboard } from "react-icons/md";
+
+import {
+  ACCEUIL_PATH,
+  FORMATIONS_PATH,
+  CANDIDATURES_PATH,
+  PROFIL_PATH,
+} from "./navigationPaths";
+import { SidebarLinksProps } from "@/layout/Sidebar/Sidebar";
 
 /*
 |--------------------------------------------------------------------------
@@ -9,7 +16,9 @@
 | Ici se trouve tous les liens et icons qui doivent etre sur le sidebar
 | de SplitShell
 */
-// export const links = [
-//     { path: ACCEUIL_PATH, icon: HiHome, label: "Acceuil" },
-//     { path: PRODUCTS_PATH, icon: HiHome, label: "Produits" },
-// ]
+export const links: SidebarLinksProps[] = [
+  { path: ACCEUIL_PATH, icon: MdDashboard, label: "Acceuil" },
+  { path: FORMATIONS_PATH, icon: MdDashboard, label: "Formations" },
+  { path: CANDIDATURES_PATH, icon: MdDashboard, label: "Candidatures" },
+  { path: PROFIL_PATH, icon: MdDashboard, label: "Mon Profil" },
+];

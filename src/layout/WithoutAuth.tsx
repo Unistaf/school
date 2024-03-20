@@ -1,6 +1,7 @@
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import useIsAuthenticate from "../hooks/useIsAuthenticatedUser";
-import { ACCEUIL_PATH } from "../routes/navigation/navigationPaths";
+
+import useIsAuthenticate from "@/hooks/useIsAuthenticatedUser";
+import { ACCEUIL_PATH } from "@/routes/navigation/navigationPaths";
 
 
 /*
