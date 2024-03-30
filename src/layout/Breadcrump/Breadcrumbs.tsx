@@ -7,11 +7,20 @@ export const Breadcrumbs = () => {
 
   return (
     <>
-      {breadcrumbs.map(({ match, breadcrumb }) => (
-        <NavLink key={match.pathname} to={match.pathname}>
-          {breadcrumb}
-        </NavLink>
-      ))}
+      <div className="text-sm breadcrumbs">
+        <ul>
+          {breadcrumbs.map(({ match, breadcrumb }, index) => {
+            console.log({ match });
+
+            return <li>
+              <NavLink className={breadcrumbs.length === (index + 1) ? "font-bold" : ""} key={match.pathname} to={match.pathname}>
+                {breadcrumb}
+              </NavLink>
+            </li>
+          })
+          }
+        </ul>
+      </div>
     </>
   );
 };

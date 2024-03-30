@@ -5,7 +5,7 @@ type TitleProps = {
 
 const Title1 = ({ title }: TitleProps) => {
   return (
-    <div className="text-3xl font-bold">{title}</div>
+    <h1 className="text-3xl font-bold">{title}</h1>
   )
 }
 
