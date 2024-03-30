@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button"
 import Title1 from "@/components/Typography/Title1"
 import Title2 from "@/components/Typography/Title2"
 
@@ -5,7 +6,10 @@ import Title2 from "@/components/Typography/Title2"
 const FormationsPage = () => {
   return (
     <div>
-      <Title1 title="Formations" />
+      <div className="flex justify-between items-center">
+        <Title1 title="Formations" />
+        <Button variant="primary" title="Ajouter une formation" />
+      </div>
       <div className="mt-6">
         <div className="min-h-96 bg-white rounded-xl shadow-sm p-4">
           <Title2 title="Liste des formations (20)" />
