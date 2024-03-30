@@ -9,7 +9,8 @@ export default {
       colors: {
         blue: "#05059B",
         white: "#FFFFFF",
-        contentBg: "#F2F5FA"
+        contentBg: "#F2F5FA",
+        gray74: "#747474"
       }
     },
   },

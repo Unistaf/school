@@ -14,4 +14,7 @@ export default defineConfig({
       "@layout": path.resolve(__dirname, "./src/layout"),
     },
   },
+  optimizeDeps: {
+    exclude: ["js-big-decimal"],
+  },
 });

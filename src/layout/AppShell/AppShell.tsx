@@ -21,7 +21,7 @@ function AppShell() {
           {/* Header */}
           <Header />
           {/* My child Items */}
-          <div className="bg-contentBg h-full overflow-y-auto overflow-x-hidden p-3">
+          <div className="bg-contentBg h-full overflow-y-auto overflow-x-hidden px-8 py-6">
             <Outlet />
           </div>
         </div>

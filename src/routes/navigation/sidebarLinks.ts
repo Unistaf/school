@@ -1,4 +1,6 @@
 import { MdDashboard } from "react-icons/md";
+import { IconType } from "react-icons";
+import { To } from "react-router-dom";
 
 import {
   ACCEUIL_PATH,
@@ -6,7 +8,6 @@ import {
   CANDIDATURES_PATH,
   PROFIL_PATH,
 } from "./navigationPaths";
-import { SidebarLinksProps } from "@/layout/Sidebar/Sidebar";
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,8 @@ import { SidebarLinksProps } from "@/layout/Sidebar/Sidebar";
 | Ici se trouve tous les liens et icons qui doivent etre sur le sidebar
 | de SplitShell
 */
+export type SidebarLinksProps = { path: To; label: string; icon: IconType };
+
 export const links: SidebarLinksProps[] = [
   { path: ACCEUIL_PATH, icon: MdDashboard, label: "Acceuil" },
   { path: FORMATIONS_PATH, icon: MdDashboard, label: "Formations" },

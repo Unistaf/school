@@ -2,6 +2,8 @@ import ErrorBoundary from "@/components/ErrorBoundary/ErrorBoundary";
 import { ACCEUIL_PATH } from "../navigationPaths";
 import RequireAuth from "@/layout/RequireAuth";
 import AppShell from "@/layout/AppShell/AppShell";
+import BreadcrumbsLayout from "@/layout/Breadcrump/BreadcrumbsLayout";
+import DashboardPage from "@/pages/Dashboard/DashboardPage";
 
 
 /*
@@ -23,7 +25,14 @@ export const privateRoutes = [
                 children: [
                     {
                         path: "",
-                        element: <h1>Wecolme</h1>
+                        element: <BreadcrumbsLayout />,
+                        children: [
+                            {
+                                breadcrumb: "Acceuil",
+                                path: "",
+                                element: <DashboardPage />
+                            }
+                        ]
                     }
                 ]
             }
