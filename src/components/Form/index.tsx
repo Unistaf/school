@@ -3,13 +3,9 @@ import { useForm } from "react-hook-form"
 import { Input } from "./Input"
 import { Select } from "./Select"
 import React from "react"
+import TextArea from "./TextArea"
+import Radio from "./Radio"
 
-// type ChildType = {
-//   props: {
-//     name: string;
-//     type: string;
-//   }
-// }
 type FormType = {
   children: React.ReactNode;
   defaultValues: any | undefined;
@@ -40,5 +36,7 @@ const Form = ({ children, defaultValues, onSubmit }: FormType) => {
 
 Form.Input = Input
 Form.Select = Select
+Form.TextArea = TextArea
+Form.Radio = Radio
 
 export default Form

@@ -1,3 +1,5 @@
+import { IoMdAdd } from "react-icons/io";
+
 import Button from '@/components/Button/Button'
 import ModalDialog from '@/layout/Modal/Modal'
 import { useState } from 'react'
@@ -16,7 +18,7 @@ const AddFormationTrigger = () => {
 
   return (
     <div>
-      <Button onClick={openModal} variant="primary" title="Ajouter une formation" />
+      <Button icon={IoMdAdd} onClick={openModal} variant="primary" title="Ajouter une formation" />
       {!!isOpen && <ModalDialog title='Ajouter une formation' isOpen={isOpen} closeModal={closeModal}>
         <AddFormationForm />
       </ModalDialog>}
