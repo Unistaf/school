@@ -1,13 +1,14 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 
 type ModalType = {
+  children: React.ReactNode;
   title: string;
   isOpen: boolean;
   closeModal: () => void;
 }
 
-export default function ModalDialog({ title, isOpen, closeModal }: ModalType) {
+export default function ModalDialog({ children, title, isOpen, closeModal }: ModalType) {
 
   return (
     <>
@@ -49,10 +50,7 @@ export default function ModalDialog({ title, isOpen, closeModal }: ModalType) {
                     </button>
                   </div>
                   <div className="mt-2 p-6">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
+                    {children}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

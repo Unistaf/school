@@ -1,11 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useForm } from "react-hook-form"
 import { Input } from "./Input"
 import { Select } from "./Select"
 import React from "react"
 
+// type ChildType = {
+//   props: {
+//     name: string;
+//     type: string;
+//   }
+// }
 type FormType = {
   children: React.ReactNode;
-  defaultValues: string;
+  defaultValues: any | undefined;
   onSubmit: () => void;
 }
 
@@ -15,13 +22,14 @@ const Form = ({ children, defaultValues, onSubmit }: FormType) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      {React.Children.map(children, (child) => {
-        return child.props.name
-          ? React.createElement(child.type, {
+      {React.Children.map(children, (child: React.ReactNode) => {
+        const { props, type } = (child as React.ReactElement<any>);
+        return props.name
+          ? React.createElement(type, {
             ...{
-              ...child.props,
+              ...props,
               register: methods.register,
-              key: child.props.name,
+              key: props.name,
             },
           })
           : child
