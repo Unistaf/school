@@ -1,11 +1,12 @@
 import ErrorBoundary from "@/components/ErrorBoundary/ErrorBoundary";
-import { ACCEUIL_PATH, CANDIDATURES_PATH, FORMATIONS_PATH } from "../navigationPaths";
+import { ACCEUIL_PATH, CANDIDATURES_PATH, FORMATIONS_PATH, MON_PROFIL_PATH } from "../navigationPaths";
 import RequireAuth from "@/layout/RequireAuth";
 import AppShell from "@/layout/AppShell/AppShell";
 import BreadcrumbsLayout from "@/layout/Breadcrump/BreadcrumbsLayout";
 import DashboardPage from "@/pages/Dashboard/DashboardPage";
 import FormationsPage from "@/pages/Formations/FormationsPage";
 import CandidaturesPage from "@/pages/Candidatures/CandidaturesPage";
+import MonProfilPage from "@/pages/MonProfil/MonProfilPage";
 
 
 /*
@@ -43,6 +44,11 @@ export const privateRoutes = [
                                 // breadcrumb: "Acceuil",
                                 path: CANDIDATURES_PATH,
                                 element: <CandidaturesPage />
+                            },
+                            {
+                                // breadcrumb: "Acceuil",
+                                path: MON_PROFIL_PATH,
+                                element: <MonProfilPage />
                             },
                         ]
                     }

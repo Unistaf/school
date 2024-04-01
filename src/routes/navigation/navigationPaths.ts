@@ -25,7 +25,7 @@ export const RESETPASSWORD = "/aut/resetPassword";
 export const ACCEUIL_PATH = "/";
 export const FORMATIONS_PATH = "formations";
 export const CANDIDATURES_PATH = "candidatures";
-export const PROFIL_PATH = "mon-profil";
+export const MON_PROFIL_PATH = "mon-profil";
 
 /**
  * @readonly

@@ -6,7 +6,7 @@ import {
   ACCEUIL_PATH,
   FORMATIONS_PATH,
   CANDIDATURES_PATH,
-  PROFIL_PATH,
+  MON_PROFIL_PATH,
 } from "./navigationPaths";
 
 /*
@@ -23,5 +23,5 @@ export const links: SidebarLinksProps[] = [
   { path: ACCEUIL_PATH, icon: MdDashboard, label: "Acceuil" },
   { path: FORMATIONS_PATH, icon: MdDashboard, label: "Formations" },
   { path: CANDIDATURES_PATH, icon: MdDashboard, label: "Candidatures" },
-  { path: PROFIL_PATH, icon: MdDashboard, label: "Mon Profil" },
+  { path: MON_PROFIL_PATH, icon: MdDashboard, label: "Mon Profil" },
 ];
