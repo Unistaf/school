@@ -1,5 +1,5 @@
 import ErrorBoundary from "@/components/ErrorBoundary/ErrorBoundary";
-import { ACCEUIL_PATH, CANDIDATURES_PATH, FORMATIONS_PATH, MON_PROFIL_PATH } from "../navigationPaths";
+import { ACCEUIL_PATH, CANDIDATURES_PATH, FORMATIONS_PATH, MODIFIER_OU_COMPLETER_PROFIL_PATH, MON_PROFIL_PATH } from "../navigationPaths";
 import RequireAuth from "@/layout/RequireAuth";
 import AppShell from "@/layout/AppShell/AppShell";
 import BreadcrumbsLayout from "@/layout/Breadcrump/BreadcrumbsLayout";
@@ -7,6 +7,8 @@ import DashboardPage from "@/pages/Dashboard/DashboardPage";
 import FormationsPage from "@/pages/Formations/FormationsPage";
 import CandidaturesPage from "@/pages/Candidatures/CandidaturesPage";
 import MonProfilPage from "@/pages/MonProfil/MonProfilPage";
+import ModifierOuCompleterProfilPage from "@/pages/MonProfil/ModifierOuCompleterProfilPage";
+import { Outlet } from "react-router-dom";
 
 
 /*
@@ -46,9 +48,18 @@ export const privateRoutes = [
                                 element: <CandidaturesPage />
                             },
                             {
-                                // breadcrumb: "Acceuil",
                                 path: MON_PROFIL_PATH,
-                                element: <MonProfilPage />
+                                element: <Outlet />,
+                                children: [
+                                    {
+                                        path: "",
+                                        element: <MonProfilPage />
+                                    },
+                                    {
+                                        path: MODIFIER_OU_COMPLETER_PROFIL_PATH,
+                                        element: <ModifierOuCompleterProfilPage />
+                                    },
+                                ]
                             },
                         ]
                     }

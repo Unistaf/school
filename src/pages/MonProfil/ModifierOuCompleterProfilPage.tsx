@@ -1,7 +1,10 @@
+import ModifierOuCompleterProfil from "@/components/MonProfil/ModifierOuCompleterProfil/ModifierOuCompleterProfil"
 
 const ModifierOuCompleterProfilPage = () => {
   return (
-    <div>ModifierOuCompleterProfilPage</div>
+    <div>
+      <ModifierOuCompleterProfil />
+    </div>
   )
 }
 

@@ -37,7 +37,7 @@ export default function ModalDialog({ children, title, isOpen, closeModal }: Mod
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-[700px] min-h-[700px] overflow-auto transform rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-[700px] min-h-[500px] overflow-auto transform rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
                   <div className="flex justify-between items-center border-b pb-4 px-5 pt-6">
                     <Dialog.Title
                       as="h3"

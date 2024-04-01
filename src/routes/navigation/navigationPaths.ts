@@ -26,6 +26,7 @@ export const ACCEUIL_PATH = "/";
 export const FORMATIONS_PATH = "formations";
 export const CANDIDATURES_PATH = "candidatures";
 export const MON_PROFIL_PATH = "mon-profil";
+export const MODIFIER_OU_COMPLETER_PROFIL_PATH = "modifier-ou-completer-profil";
 
 /**
  * @readonly
