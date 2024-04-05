@@ -1,6 +1,8 @@
-import { PUBLIC_PATH } from "../navigationPaths";
+import { LOGIN_PATH, PUBLIC_PATH } from "../navigationPaths";
 import ErrorBoundary from '../../../components/ErrorBoundary/ErrorBoundary';
 import WithoutAuth from "../../../layout/WithoutAuth";
+import { LoginPage } from "@/pages/Login/LoginPage";
+import { Navigate } from "react-router-dom";
 
 /*
 |---------------------------------------------------------------
@@ -16,8 +18,12 @@ export const publicRoutes = [
         element: <WithoutAuth />,
         children: [
             {
-                path: "",
-                element: <p>Hello</p>
+                path: '',
+                element: <Navigate to={LOGIN_PATH} />
+            },
+            {
+                path: LOGIN_PATH,
+                element: <LoginPage />
             },
         ]
     },

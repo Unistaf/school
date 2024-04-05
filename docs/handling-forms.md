@@ -7,6 +7,6 @@ Pour gerer nos formulaires, on a besoin de react-hook-form et yup & @hookform/re
 La gestion des formulaires est base sur le concept des compound components.
 
 Pour cela, on a besoin de:
-- Creer un composant <Input />
-- Creer un composant <Select />
-- Creer le composant <Form />
+- Creer un composant `<Input />`
+- Creer un composant `<Select />`
+- Creer le composant `<Form />`

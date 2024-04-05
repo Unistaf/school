@@ -9,6 +9,7 @@ import CandidaturesPage from "@/pages/Candidatures/CandidaturesPage";
 import MonProfilPage from "@/pages/MonProfil/MonProfilPage";
 import ModifierOuCompleterProfilPage from "@/pages/MonProfil/ModifierOuCompleterProfilPage";
 import { Outlet } from "react-router-dom";
+// import AuthContextProvider from "@/context/AuthContext";
 
 
 /*
@@ -22,7 +23,7 @@ export const privateRoutes = [
     {
         path: ACCEUIL_PATH,
         errorElement: <ErrorBoundary />,
-        element: <RequireAuth />,
+        element: <><RequireAuth /></>,
         children: [
             {
                 path: "",

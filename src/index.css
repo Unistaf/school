@@ -7,3 +7,11 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+tr{
+  /* background-color: #57716E !important; */
+}
+.css-moqdou-getRowContainerStyle-Row{
+  background-color: rgba(18, 98, 168, .2) !important;
+  padding: 20px !important;
+}
